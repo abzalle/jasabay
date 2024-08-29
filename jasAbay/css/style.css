@@ -3,7 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: "Inter", sans-serif;
+}
 .container {
     width: 1480px;
     margin: 0 auto;
@@ -12,69 +14,73 @@
 .nav {
     background-color: rgba(255, 160, 60, 0.62);
     border-radius: 15px;
+    position: absolute;
+    width: 100%;
 }
 
-.nav-inner{
+.nav-inner {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
     padding-bottom: 15px;
-} 
-
-.nav-logo{
-    margin-left: 78px ;
 }
 
-.nav-items{
+.nav-logo {
+    margin-left: 78px;
+}
+
+.nav-items {
     margin-right: 100px;
     display: flex;
     align-items: center;
 }
-.nav-item{
+
+.nav-item {
     display: inline;
     margin-left: 19px;
     font-size: 20px;
     color: #111111;
 }
 
-.header{
+.header {
     background-image: url(/jasAbay/img/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.header-logo{
+.header-logo {
     text-align: center;
-    padding-top: 15px;
+    padding-top: 130px;
 }
 
-.header-text{
+.header-text {
     width: 280px;
     margin: 0 auto;
+    text-align: center;
 }
 
-.header-btn{
+.header-btn {
     margin-top: 155px;
     text-align: center;
     padding-bottom: 98px;
 }
 
-.header-btn a{
+.header-btn a {
     padding: 19px 62px;
     background: linear-gradient(#FFA03C 82%, #9A6124);
     border-radius: 48px;
     font-size: 20px;
-    color:#180069;
+    color: #180069;
     text-decoration: none;
 }
 
-.mission{
+.mission {
     color: white;
     background-color: #08254F;
 }
 
-.mission-h2{
+.mission-h2 {
     padding-top: 44px;
     font-size: 64px;
     font-weight: bold;
@@ -85,7 +91,7 @@
     color: #FFA03C;
 }
 
-.mission-text{
+.mission-text {
     font-size: 30px;
     text-align: center;
     width: 500px;
@@ -94,7 +100,7 @@
     margin-right: auto;
 }
 
-.mission-text__author{
+.mission-text__author {
     font-size: 27px;
     font-weight: bold;
     margin-top: 54px;
@@ -103,8 +109,68 @@
     margin-left: auto;
 }
 
-.mission-text__author span{
+.mission-text__author span {
     font-weight: 400;
     font-size: 24px;
 
+}
+
+.academy-slider {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+
+.slider-item {
+    max-width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-right: 50px;
+}
+
+.slider-item__text{
+    color: white;
+    background-color: #08254F;
+    width: 300px;
+    text-align: center
+
+}
+
+.slider-item__h2{
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.slider-item__p{
+    font-size: 16px;
+    padding-bottom: 16px;
+    width: 168px;
+    margin: 0 auto;
+}
+
+.slider-item img {
+    width: 300px;
+    height: 100%;
+}
+
+.slick-prev,
+.slick-next {
+    background: transparent;
+    /* Отключаем стандартный фон */
+    border: none;
+    /* Отключаем границы */
+    outline: none;
+    /* Отключаем выделение по нажатию */
+}
+
+.slick-prev:before {
+    content: url('path-to-prev-arrow-image.png');
+    /* Ссылка на изображение левой стрелки */
+}
+
+.slick-next:before {
+    content: url('path-to-next-arrow-image.png');
+    /* Ссылка на изображение правой стрелки */
 }

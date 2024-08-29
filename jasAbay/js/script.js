@@ -4,5 +4,6 @@ $('.multiple-items').slick({
     slidesToScroll: 1, 
     dots: true,
     autoplay: true, 
-    autoplaySpeed: 2000, 
+    autoplaySpeed: 2000,
+
 });

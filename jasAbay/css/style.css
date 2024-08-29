@@ -3,9 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-family: "Inter", sans-serif;
 }
+
 .container {
     width: 1480px;
     margin: 0 auto;
@@ -130,20 +132,19 @@ body{
     margin-right: 50px;
 }
 
-.slider-item__text{
+.slider-item__text {
     color: white;
     background-color: #08254F;
     width: 300px;
     text-align: center
-
 }
 
-.slider-item__h2{
+.slider-item__h2 {
     font-weight: 700;
     font-size: 32px;
 }
 
-.slider-item__p{
+.slider-item__p {
     font-size: 16px;
     padding-bottom: 16px;
     width: 168px;
@@ -157,20 +158,31 @@ body{
 
 .slick-prev,
 .slick-next {
-    background: transparent;
-    /* Отключаем стандартный фон */
+    width: 50px;
+    height: 50px;
+    background-color: inherit;
+    position: relative;
+    top: 50%;
+}
+
+
+.slick-prev {
+    background-image: url(/jasAbay/img/prevArrow.png);
+    font-size: 0;
     border: none;
-    /* Отключаем границы */
-    outline: none;
-    /* Отключаем выделение по нажатию */
+    background-repeat: no-repeat;
+    width: 30px;
 }
 
-.slick-prev:before {
-    content: url('path-to-prev-arrow-image.png');
-    /* Ссылка на изображение левой стрелки */
+.slick-next {
+    background-image: url(/jasAbay/img/nextArrow.png);
+    font-size: 0;
+    border: none;
+    background-repeat: no-repeat;
+    width: 30px;
 }
 
-.slick-next:before {
-    content: url('path-to-next-arrow-image.png');
-    /* Ссылка на изображение правой стрелки */
+.slick-next:hover, .slick-prev:hover{
+    background-repeat: no-repeat;
+    cursor: pointer;
 }

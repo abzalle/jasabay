@@ -123,7 +123,7 @@ body {
     display: flex;
     min-width: 0;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
 
@@ -159,22 +159,22 @@ body {
     height: 100%;
 }
 
-.multiple-items{
+.multiple-items {
     position: relative;
 }
 
-.multiple-items .slick-arrow{
+.multiple-items .slick-arrow {
     position: absolute;
     top: 50%;
     margin: -65px 0 0 0;
     z-index: 10;
 }
 
-.multiple-items .slick-arrow.slick-prev{
+.multiple-items .slick-arrow.slick-prev {
     left: 0;
 }
 
-.multiple-items .slick-arrow.slick-next{
+.multiple-items .slick-arrow.slick-next {
     right: 0;
 }
 
@@ -194,14 +194,15 @@ body {
     width: 30px;
 }
 
-.slick-list{
+.slick-list {
     overflow: hidden;
     position: absolute;
 }
 
-.slick-track{
+.slick-track {
     display: flex;
 }
+
 .slick-next {
     background-image: url(/jasAbay/img/nextArrow.png);
     font-size: 0;
@@ -210,13 +211,14 @@ body {
     width: 30px;
 }
 
-.slick-next:hover, .slick-prev:hover{
+.slick-next:hover,
+.slick-prev:hover {
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
 
-.slick-dots{
+.slick-dots {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,12 +229,12 @@ body {
     border-radius: 33px;
 }
 
-.slick-dots li{
+.slick-dots li {
     list-style: none;
     margin: 6px;
 }
 
-.slick-dots button{
+.slick-dots button {
     font-size: 0;
     width: 10px;
     height: 10px;
@@ -240,13 +242,13 @@ body {
     border-radius: 50%;
 }
 
-.slick-dots li.slick-active button{
+.slick-dots li.slick-active button {
     background-color: white;
     border: 1px solid black;
 }
 
 
-.academy-h2{
+.academy-h2 {
     text-align: center;
     width: 256px;
     font-size: 32px;
@@ -258,46 +260,114 @@ body {
 
 
 
-.features{
+.features {
     background-color: #08254F;
     color: #fff
 }
 
 
-.features-h2{
+.features-h2 {
     font-size: 96px;
-    font-weight:900;
+    font-weight: 900;
     color: #FFA03C;
     max-width: 780px;
     text-align: center;
     margin: 0 auto;
-    padding-top:35px;
+    padding-top: 35px;
     margin-bottom: 110px;
 }
 
 
-.features-items{
+.features-items {
     display: flex;
     justify-content: space-between;
     max-width: 900px;
     margin: 0 auto;
 }
 
-.features-item{
+.features-item {
     width: 205px;
     text-align: center;
     margin-bottom: 100px;
 }
 
-.features-img__box{
+.features-img__box {
     text-align: center;
     margin-bottom: 15px;
 }
 
-.features-text{
+.features-text {
     width: 200px;
     text-align: center;
     font-weight: 700;
     font-size: 16px;
 }
 
+.results {
+    /* background-image: url(/jasAbay/img/results-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    overflow-y: scroll; */
+    background-image: linear-gradient(rgba(8, 37, 79, 0.5), rgba(8, 37, 79, 0.5)), url(/jasAbay/img/results-bg.jpg);
+    background-position: top;
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+
+}
+
+.table {
+    backdrop-filter: blur(5px);
+    color: #FFA03C;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 3px solid #001E6E;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.table-wrapper{
+    height: 500px;
+    overflow-y: auto;
+    width: 1400px;
+}
+
+.table-wrapper::-webkit-scrollbar{
+    width: 13px;
+
+}
+
+.table-wrapper::-webkit-scrollbar-track{
+    background: #FFFFFF;
+    border-radius: 9px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb{
+    background: #666666;
+    border-radius: 9px;
+    border: 3px solid #ffffff;
+    height: 50px;
+}
+
+
+caption{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+td{
+    border: 3px solid #001E6E;
+    padding: 10px;
+}
+
+.table-caption{
+    color: #001E6E;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+
+}

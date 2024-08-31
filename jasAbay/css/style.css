@@ -45,7 +45,7 @@ body {
 }
 
 .header {
-    background-image: url(/jasAbay/img/bg.jpg);
+    background-image: url(./../img/bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -187,7 +187,7 @@ body {
 
 
 .slick-prev {
-    background-image: url(/jasAbay/img/prevArrow.png);
+    background-image: url(./../img/prevArrow.png);
     font-size: 0;
     border: none;
     background-repeat: no-repeat;
@@ -204,7 +204,7 @@ body {
 }
 
 .slick-next {
-    background-image: url(/jasAbay/img/nextArrow.png);
+    background-image: url(./../img/nextArrow.png);
     font-size: 0;
     border: none;
     background-repeat: no-repeat;
@@ -247,6 +247,12 @@ body {
     border: 1px solid black;
 }
 
+.slider-item{
+    transition: .3s all;
+}
+.slider-item:hover{
+    transform: scale(1.1);
+}
 
 .academy-h2 {
     text-align: center;
@@ -309,7 +315,7 @@ body {
     background-repeat: no-repeat;
     height: 500px;
     overflow-y: scroll; */
-    background-image: linear-gradient(rgba(8, 37, 79, 0.5), rgba(8, 37, 79, 0.5)), url(/jasAbay/img/results-bg.jpg);
+    background-image: linear-gradient(rgba(8, 37, 79, 0.5), rgba(8, 37, 79, 0.5)), url(./../img/results-bg.jpg);
     background-position: top;
     background-repeat: repeat, no-repeat;
     background-size: auto, cover;
@@ -351,11 +357,12 @@ body {
 }
 
 
-caption{
+.results-caption{
     color: #fff;
     font-size: 32px;
     font-weight: 500;
     text-align: center;
+    padding: 30px;
 }
 
 
